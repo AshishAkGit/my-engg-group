@@ -1,37 +1,49 @@
 import React from 'react'
+import Carousel from 'react-bootstrap/Carousel'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Home=(props)=> {
-  let content={
-    English:{
-      title:"Home",
-      description:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-    },
-    German:{
-      title:"Zuhause",
-      description:"Lorem Ipsum ist einfach ein Dummy-Text der Druck- und Satzindustrie. Lorem Ipsum ist seit dem 16. Jahrhundert der Standard-Dummy-Text der Branche, als ein unbekannter Drucker eine Galeere vom Typ nahm und sie zu einem Musterbuch verschlüsselte."  
-    }
-  };
-   props.language === "German" ? (content=content.German) : (content=content.English)
+
+
+const Home=(props)=> {  
     return (
-      <div className="home">
-        <div className="container">
-          <div className="row align-items-center my-5">
-            <div className="col-lg-7">
-              <img
-                className="img-fluid rounded mb-4 mb-lg-0"
-                src="./images/engg-grp-img1.jpeg"
-                alt=""
-              />
-            </div>
-            <div className="col-lg-5">
-              <h1 className="font-weight-light">{content.title}</h1>
-              <p>
-                 {content.description}
-              </p>
-            </div>
-          </div>
+      <div>         
+        <div>
+          <div className="carousel">
+           <Carousel interval={600} keyboard={false} pauseonhover="true"> 
+             <Carousel.Item style={{'height':"600px"}}>
+                <img
+                  style={{'height':"600px"}}
+                  className="d-block w-100"
+                  src="./images/dynateq_image_1.jpeg"
+                  alt="First slide"
+                />
+               <Carousel.Caption>    
+               </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item style={{'height':"600px"}}>
+                <img
+                  style={{'height':"600px"}}
+                  className="d-block w-100"
+                  src="./images/dynateq_image_2.jpeg"
+                  alt="Second slide"
+                />
+                <Carousel.Caption>    
+                </Carousel.Caption>
+             </Carousel.Item>
+             <Carousel.Item style={{'height':"600px"}}>
+                <img
+                  style={{'height':"600px"}}
+                  className="d-block w-100"
+                  src="./images/dynateq_image_3.jpeg"
+                  alt="Third slide"
+                />
+              <Carousel.Caption>      
+              </Carousel.Caption>
+            </Carousel.Item>
+            </Carousel>
         </div>
       </div>
+    </div>  
     );
   }
 

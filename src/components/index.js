@@ -1,5 +1,14 @@
-export { default as Navigation } from "./Navigation";
+export { default as Navigation } from './Navigation';
 export { default as Footer } from "./Footer";
 export { default as Home } from "./Home";
 export { default as About } from "./About";
 export { default as Contact } from "./Contact";
+export { default as Careers } from './Careers';
+export { default as Divisions } from './Divisions';
+export { default as Locations } from './Locations';
+export { default as News } from './News';
+export { default as ProjectLifecycle } from './ProjectLifecycle';
+export { default as Vision } from './Vision';
+export { default as Mission } from './Mission';
+export { default as GlobalBusiness } from './GlobalBusiness';
+export { default as WhyDynateq } from './WhyDynateq';

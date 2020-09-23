@@ -5,7 +5,7 @@ const Footer=(props)=> {
         <footer className="py-3 bg-dark fixed-bottom">
           <div className="container">
             <p className="m-0 text-center text-white">
-              Copyright &copy; Engineering Group 2020
+              Copyright &copy; Dynanteq Consulting Pvt Ltd 2020
             </p>
           </div>
         </footer>
